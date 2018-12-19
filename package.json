@@ -4,7 +4,7 @@
   "description": "Rap tools",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "test"
   },
   "repository": {
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/DonovonJenson/RapBetter2.0/issues"
   },
-  "homepage": "https://github.com/DonovonJenson/RapBetter2.0#readme"
+  "homepage": "https://github.com/DonovonJenson/RapBetter2.0#readme",
+  "devDependencies": {
+    "webpack": "^4.28.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
 }
