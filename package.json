@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/DonovonJenson/RapBetter2.0#readme",
   "devDependencies": {
-    "webpack": "^4.28.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
