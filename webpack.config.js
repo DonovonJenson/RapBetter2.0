@@ -1,3 +1,6 @@
+const webpack = require('webpack');
+
+
 module.exports = {
     entry: './Client/index.js',
     module: {
@@ -17,7 +20,11 @@ module.exports = {
       publicPath: '/',
       filename: 'bundle.js'
     },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ],
     devServer: {
-      contentBase: './Client'
+      contentBase: './Client',
+      hot: true
     }
   };
