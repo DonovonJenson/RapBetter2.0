@@ -16,7 +16,7 @@ module.exports = {
       extensions: ['*', '.js', '.jsx']
     },
     output: {
-      path: __dirname + '/Client',
+      path: __dirname + '/Client/webpackOutput',
       publicPath: '/',
       filename: 'bundle.js'
     },
@@ -25,6 +25,5 @@ module.exports = {
     ],
     devServer: {
       contentBase: './Client',
-      hot: true
     }
   };
