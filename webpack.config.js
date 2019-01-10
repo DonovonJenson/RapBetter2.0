@@ -1,8 +1,10 @@
 const webpack = require('webpack');
 
+//Don't forget to create a production build for this
 
 module.exports = {
     entry: './Client/index.js',
+    mode: 'development',
     module: {
       rules: [
         {
