@@ -1,7 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+/* eslint-disable no-unused-vars */
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+import HomePage from "./components/homePage/home";
 
 ReactDOM.render(
-  <div>React Working More</div>,
-  document.getElementById('app')
+	<HomePage/>,
+	document.getElementById("app")
 );
