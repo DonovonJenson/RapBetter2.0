@@ -4,7 +4,7 @@
   "description": "Rap tools",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "nodemon server.js webpack --watch",
     "test": "test"
   },
   "repository": {
@@ -32,6 +32,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
