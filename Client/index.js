@@ -2,10 +2,13 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/app.js";
+import { BrowserRouter } from "react-router-dom";
 
-import HomePage from "./components/homePage/home";
 
 ReactDOM.render(
-	<HomePage/>,
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
 	document.getElementById("app")
 );

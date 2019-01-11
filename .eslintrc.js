@@ -1,6 +1,6 @@
 module.exports = {
     "parser": "babel-eslint",
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended",  "plugin:react/recommended"],
     "env": {
         "browser": true,
         "es6": true,
@@ -33,6 +33,8 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
     }
 };
