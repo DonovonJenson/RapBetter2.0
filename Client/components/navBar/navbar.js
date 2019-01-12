@@ -9,6 +9,7 @@ export default class NavBar extends React.Component{
 	render(){
 		return (
 			<AppBar title='Rap Better'>
+				<div> Hello! </div>
 				{/* <Link to="/">Home</Link>
 				<Link to="/whoah">Cool New Stuff</Link> */}
 			</AppBar>

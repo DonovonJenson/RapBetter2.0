@@ -4,7 +4,7 @@
   "description": "Rap tools",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js webpack --watch",
+    "start": "nodemon server.js & webpack --watch",
     "test": "test"
   },
   "repository": {
