@@ -1,5 +1,5 @@
-# RapBetter2.0
-A remake of RapBetter, now that I have more engineering experience
+# Rap Better 2
+A website with educational tools to help rappers increase their skill set.
 
 # Technologies
  - Node
@@ -8,3 +8,7 @@ A remake of RapBetter, now that I have more engineering experience
  - Webpack
  - Babel
  - Material UI
+
+ # Contributors 
+
+ Donovon Jenson
