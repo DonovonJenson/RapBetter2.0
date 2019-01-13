@@ -1,5 +1,5 @@
 # Rap Better 2
-A website with educational tools to help rappers increase their skill set.
+Rap Better is a website dedicated to helping individuals learn to rap. This project will contain resources such as a youtube-hosted video library, brief descriptions of applicable courses, and an about page. There is also a distinct tool for practicing freestyling in the works.
 
 # Technologies
  - Node
