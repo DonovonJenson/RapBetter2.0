@@ -4,8 +4,9 @@
   "description": "Rap tools",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js & webpack --watch",
-    "test": "test"
+    "start": "nodemon server.js & webpack --mode development --watch",
+    "production": "nodemon server.js & webpack --mode production",
+    "test": "jest"
   },
   "repository": {
     "type": "git",

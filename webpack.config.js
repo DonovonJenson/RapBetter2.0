@@ -4,7 +4,6 @@ const webpack = require("webpack");
 
 module.exports = {
 	entry: "./Client/index.js",
-	mode: "development",
 	module: {
 		rules: [
 			{
