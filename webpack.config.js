@@ -8,9 +8,14 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				use: ["babel-loader"]
-			}
+				exclude: [/node_modules/, /\.sass$/, /\.scss$/],
+				use: ["babel-loader"],
+			},
+			{
+				test: /\.scss$/,
+				include: /./,
+				use: ["style-loader", "css-loader", "sass-loader"]
+			},
 		]
 	},
 	resolve: {
