@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 //Don't forget to create a production build for this
 
@@ -16,6 +17,12 @@ module.exports = {
 				include: /./,
 				use: ["style-loader", "css-loader", "sass-loader"]
 			},
+			{
+				test: /\.(png|svg|jpg|gif)$/,
+				use: [
+					"file-loader"
+				]
+			}
 		]
 	},
 	resolve: {
@@ -27,7 +34,8 @@ module.exports = {
 		filename: "bundle.js"
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebpackPlugin()
 	],
 	devServer: {
 		contentBase: "./Client",
