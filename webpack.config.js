@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 //Don't forget to create a production build for this
 
@@ -14,7 +15,6 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				include: /./,
 				use: ["style-loader", "css-loader", "sass-loader"]
 			},
 			{
@@ -22,6 +22,10 @@ module.exports = {
 				use: [
 					"file-loader"
 				]
+			},
+			{
+				test: /\.(png|jpg)$/,
+				use: ["url-loader"]
 			}
 		]
 	},
@@ -29,13 +33,14 @@ module.exports = {
 		extensions: ["*", ".js", ".jsx"]
 	},
 	output: {
-		path: __dirname + "/Client/webpackOutput",
+		path: __dirname + "/Client/dist",
 		publicPath: "/",
 		filename: "bundle.js"
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin(),
+		new CleanWebpackPlugin(["dist"])
 	],
 	devServer: {
 		contentBase: "./Client",

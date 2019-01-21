@@ -1,14 +1,23 @@
 import React from "react";
 
-import Card from "@material-ui/core/Card";
-
+import Banner from "../banner/banner";
 import Course from "./course.js";
+import "./courses.scss";
 
 export default class Courses extends React.Component{
 	render(){
+
+		const courseBanner = {
+			message: "Join thousands of students in rap courses",
+		};
+
+
 		return (
 			<div>
-				<Card/>
+				<img className='banner-image' src={"../../dist/images/RapBetterBanner.jpg"}
+
+				/>
+				<Banner {...courseBanner}/>
 				<Course 
 					title = 'How To Rap Fundamentals'
 					price = '$15'
